@@ -1,0 +1,47 @@
+header{
+    position: fixed;
+    width: 100%;
+    background-color: lightblue;
+    color: darkblue;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header li {
+    list-style-type: none;
+    margin:0;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header a{
+    width: fit-content;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header li a figure{
+    width: fit-content;
+    margin: 0px;
+}
+
+.App-logo{
+    height: 10vh;
+    transition: .5s;
+}
+
+.App-logo:hover{
+    filter: invert(100%);
+}
