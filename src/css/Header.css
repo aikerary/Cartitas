@@ -30,6 +30,9 @@ header a{
     width: fit-content;
     text-decoration: none;
     transition: .5s;
+    font-weight: bolder;
+    /* Make all the words in uppercase */
+    text-transform: uppercase;
 }
 
 header li a figure{
@@ -40,8 +43,10 @@ header li a figure{
 .App-logo{
     height: 10vh;
     transition: .5s;
+    filter: invert(18%) sepia(18%) saturate(7247%) hue-rotate(226deg) brightness(92%) contrast(154%);
 }
 
 .App-logo:hover{
-    filter: invert(100%);
+    height:11vh;
+    filter: invert(9%) sepia(93%) saturate(3341%) hue-rotate(353deg) brightness(106%) contrast(116%);
 }
