@@ -1,8 +1,8 @@
 header{
     position: fixed;
     width: 100%;
-    background-color: lightblue;
-    color: darkblue;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     min-height: 10vh;
     display: flex;
     flex-direction: row;
@@ -33,20 +33,45 @@ header a{
     font-weight: bolder;
     /* Make all the words in uppercase */
     text-transform: uppercase;
+    border-radius: 25px;
 }
 
-header li a figure{
+header figure{
     width: fit-content;
-    margin: 0px;
+}
+
+header li a{
+    padding: 20px;
+}
+
+header li a:hover{
+    color: var(--white);
+    background-color: var(--hover);
+}
+
+header a figure{
+    width: fit-content;
+    margin: 10px;
+}
+
+figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .App-logo{
     height: 10vh;
+    margin: 0px;
     transition: .5s;
     filter: invert(18%) sepia(18%) saturate(7247%) hue-rotate(226deg) brightness(92%) contrast(154%);
 }
 
-.App-logo:hover{
+a:hover figure .App-logo{
     height:11vh;
     filter: invert(9%) sepia(93%) saturate(3341%) hue-rotate(353deg) brightness(106%) contrast(116%);
+}
+
+a:hover figure span{
+    color: var(--hover);
 }

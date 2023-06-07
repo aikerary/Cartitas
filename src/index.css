@@ -1,11 +1,22 @@
 /* Import roboto */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
+/* Define the root */
+
+:root{
+  /* Create a variable for main and secondary color */
+  --main-color: lightblue;
+  --secondary-color: darkblue;
+  --hover: darkred;
+  --white: white;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
 }
 
 code {

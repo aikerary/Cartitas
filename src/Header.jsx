@@ -9,12 +9,13 @@ function Header() {
             <a href="#">
                 <figure>
                     <img src={logo} className="App-logo" alt="logo" />
+                    <span>Cartitas</span>
                 </figure>
             </a>
             <ul>
-                <li><a href="#">How to play</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Repo</a></li>
+                <li><a href="">How to play</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Repo</a></li>
             </ul>
         </header>
     );
