@@ -11,6 +11,10 @@
   --white: white;
 }
 
+*{
+  outline: none;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;

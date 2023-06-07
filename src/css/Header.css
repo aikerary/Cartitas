@@ -33,7 +33,7 @@ header a{
     font-weight: bolder;
     /* Make all the words in uppercase */
     text-transform: uppercase;
-    border-radius: 25px;
+    border-radius: 45px;
 }
 
 header figure{
@@ -45,8 +45,8 @@ header li a{
 }
 
 header li a:hover{
-    color: var(--white);
-    background-color: var(--hover);
+    color: var(--main-color);
+    background-color: var(--secondary-color);
 }
 
 header a figure{
@@ -56,7 +56,7 @@ header a figure{
 
 figure{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 

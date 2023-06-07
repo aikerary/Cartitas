@@ -15,7 +15,7 @@ function Header() {
             <ul>
                 <li><a href="">How to play</a></li>
                 <li><a href="">About me</a></li>
-                <li><a href="">Repo</a></li>
+                <li><a href="">Repository</a></li>
             </ul>
         </header>
     );
