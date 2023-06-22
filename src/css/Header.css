@@ -64,12 +64,12 @@ figure{
     height: 10vh;
     margin: 0px;
     transition: .5s;
-    filter: invert(18%) sepia(18%) saturate(7247%) hue-rotate(226deg) brightness(92%) contrast(154%);
+    filter: var(--filter);
 }
 
 a:hover figure .App-logo{
     height:11vh;
-    filter: invert(9%) sepia(93%) saturate(3341%) hue-rotate(353deg) brightness(106%) contrast(116%);
+    filter: var(--filter2);
 }
 
 a:hover figure span{

@@ -2,17 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 /* Define the root */
-
-:root{
+:root {
   /* Create a variable for main and secondary color */
   --main-color: lightblue;
   --secondary-color: darkblue;
   --hover: darkred;
   --white: white;
+  --filter:invert(18%) sepia(18%) saturate(7247%) hue-rotate(226deg) brightness(92%) contrast(154%);
+  --filter2: invert(9%) sepia(93%) saturate(3341%) hue-rotate(353deg) brightness(106%) contrast(116%);
 }
 
-*{
+* {
   outline: none;
+  transition: .5s;
 }
 
 body {
@@ -23,7 +25,13 @@ body {
   background-color: var(--white);
 }
 
+body.dark {
+  --main-color: black;
+  --secondary-color: lightblue;
+  --hover: darkred;
+  --white: rgb(33, 33, 33);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
