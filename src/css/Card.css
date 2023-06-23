@@ -1,0 +1,28 @@
+.card-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 200px;
+    background-color: var(--card-background);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.card-icon{
+    font-size: 5em;
+    font-weight: 1500;
+    padding: 0;
+    margin: 0;
+    color: var(--card-lines);
+}
+
+.card-frame{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    border: 7px solid var(--card-lines);
+}

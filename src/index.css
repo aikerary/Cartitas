@@ -10,6 +10,8 @@
   --white: #d6eadf;
   --filter:invert(68%) sepia(32%) saturate(596%) hue-rotate(186deg) brightness(85%) contrast(87%);
   --filter2: invert(9%) sepia(93%) saturate(3341%) hue-rotate(353deg) brightness(106%) contrast(116%);
+  --card-background: #ffee93;
+  --card-lines: #ffc09f;
 }
 
 * {
@@ -30,6 +32,8 @@ body.dark {
   --secondary-color: #809bce;
   --hover: darkred;
   --white: rgb(33, 33, 33);
+  --card-background: darkgrey;
+  --card-lines:rgb(70, 70, 70);
 }
 
 code {
