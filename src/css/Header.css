@@ -81,3 +81,10 @@ a figure span{
 a:hover figure span{
     color: var(--hover);
 }
+
+.left-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

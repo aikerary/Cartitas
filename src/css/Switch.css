@@ -9,12 +9,8 @@
     width: 7rem;
     height: 3rem;
     border-radius: 1.5rem;
-    position: fixed;
-    top: 90vh;
+    position: relative;
     overflow: hidden;
-    position: absolute;
-    left: 50vw;
-    transform: translate(-50%, -50%);
     box-shadow: -2px -2px 0.1rem 0 rgba(0, 0, 0, 0.3),
       2px 2px 0.5px 0 rgba(255, 255, 255, 0.3);
   }
