@@ -4,11 +4,11 @@
 /* Define the root */
 :root {
   /* Create a variable for main and secondary color */
-  --main-color: lightblue;
-  --secondary-color: darkblue;
+  --main-color: #d6eadf;
+  --secondary-color: #809bce;
   --hover: darkred;
-  --white: white;
-  --filter:invert(18%) sepia(18%) saturate(7247%) hue-rotate(226deg) brightness(92%) contrast(154%);
+  --white: #d6eadf;
+  --filter:invert(68%) sepia(32%) saturate(596%) hue-rotate(186deg) brightness(85%) contrast(87%);
   --filter2: invert(9%) sepia(93%) saturate(3341%) hue-rotate(353deg) brightness(106%) contrast(116%);
 }
 
@@ -27,7 +27,7 @@ body {
 
 body.dark {
   --main-color: black;
-  --secondary-color: lightblue;
+  --secondary-color: #809bce;
   --hover: darkred;
   --white: rgb(33, 33, 33);
 }

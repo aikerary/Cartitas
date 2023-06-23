@@ -41,7 +41,9 @@ header figure{
 }
 
 header li a{
+    text-decoration: none;
     padding: 20px;
+    color: var(--secondary-color);
 }
 
 header li a:hover{
@@ -70,6 +72,10 @@ figure{
 a:hover figure .App-logo{
     height:11vh;
     filter: var(--filter2);
+}
+
+a figure span{
+    color: var(--secondary-color);
 }
 
 a:hover figure span{
