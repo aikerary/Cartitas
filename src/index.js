@@ -4,14 +4,16 @@ import './index.css';
 import Header from './Header';
 import Switch from './Switch';
 import Card from './Card';
+import Deck from './Deck';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Header /> */}
-    <Switch />
-     <Card/>
+    {/* <Switch /> */}
+     {/* <Card/> */}
+      <Deck/>
   </React.StrictMode>
 );
 
