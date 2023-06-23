@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
+import "./css/Deck.css";
 
 const Deck = () => {
   const [cards, setCards] = useState(["plus", "plus", "plus", "plus", "plus"]);
