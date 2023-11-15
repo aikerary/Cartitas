@@ -1,0 +1,32 @@
+/* Import roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+/* Font face for cartitas */
+@font-face {
+  font-family: 'cartitas';
+  src:  url('fonts/cartitas.eot?jjjdj7');
+  src:  url('fonts/cartitas.eot?jjjdj7#iefix') format('embedded-opentype'),
+    url('fonts/cartitas.ttf?jjjdj7') format('truetype'),
+    url('fonts/cartitas.woff?jjjdj7') format('woff'),
+    url('fonts/cartitas.svg?jjjdj7#cartitas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1::after{
+  font-family: 'cartitas';
+  position: absolute;
+  content: '\e900';
+}
+
+/* When click the h1 change the color of the h1::after */
+h1:active::after{
+  color: red;
+}
