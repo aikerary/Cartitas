@@ -1,8 +1,9 @@
+/* Import Oleo Script */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 /* Import roboto */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-
 /* Font face for cartitas */
-@font-face {
+@font-face{
   font-family: 'cartitas';
   src:  url('fonts/cartitas.eot?jjjdj7');
   src:  url('fonts/cartitas.eot?jjjdj7#iefix') format('embedded-opentype'),
@@ -14,20 +15,24 @@
   font-display: block;
 }
 
+
+/* Generate a root */
+:root {
+  --text:#053030;
+  --text-light:#015958;
+  --contour: #008F8C;
+  --medium: #0CABA8;
+  --light: #0FC2C0;
+}
+
+
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  transition: 2s ease all;
 }
 
-h1::after{
+*::before, *::after{
   font-family: 'cartitas';
-  position: absolute;
-  content: '\e900';
-}
-
-/* When hover the h1 change the color of the h1::after */
-h1:hover::after{
-  color: red;
+  transition: .5s ease all;
 }
