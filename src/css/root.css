@@ -18,6 +18,7 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  transition: 2s ease all;
 }
 
 h1::after{
@@ -26,7 +27,7 @@ h1::after{
   content: '\e900';
 }
 
-/* When click the h1 change the color of the h1::after */
-h1:active::after{
+/* When hover the h1 change the color of the h1::after */
+h1:hover::after{
   color: red;
 }

@@ -1,6 +1,6 @@
 # Cartitas
 
-Cartitas is a card game designed by [A.A.Ary][github.com/aikerary].
+Cartitas is a card game designed by [A.A.Ary](github.com/aikerary).
 
 ## Getting Started
 
