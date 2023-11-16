@@ -1,6 +1,6 @@
 .card{
-    width: 180px;
-    height: 270px;
+    width: 120px;
+    height: 180px;
     background-color: var(--medium);
     display: flex;
     flex-direction: row;
@@ -22,8 +22,8 @@
     content: '';
     position: absolute;
     border-radius: 20px;
-    width: 140px;
-    height: 210px;
+    width: 87px;
+    height: 134px;
     border: 7px solid var(--text);
     transition: 0.5s;
 }
@@ -31,22 +31,30 @@
 .card .icon::before{
     font-family: 'cartitas';
     content: "";
-    font-size: 7em;
+    font-size: 4em;
     color: var(--text);
 }
+
+/* Cross */
 
 .card .icon#cross::before{
     content: "\e904";
 }
 
+/* Star */
+
 .card .icon#star::before{
-    font-size: 8em;
+    font-size: 5em;
     content: "\e903";
 }
+
+/* Waves */
 
 .card .icon#wave::before{
     content: "\e902";
 }
+
+/* Square */
 
 .card .icon#square::before{
     content: "\e901";
