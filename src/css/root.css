@@ -36,3 +36,7 @@
   font-family: 'cartitas';
   transition: .5s ease all;
 }
+
+body{
+  background-color: var(--text);
+}

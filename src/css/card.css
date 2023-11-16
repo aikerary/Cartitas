@@ -1,0 +1,53 @@
+.card{
+    width: 180px;
+    height: 270px;
+    background-color: var(--medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card.rotate{
+    /* Rotate 360 degree from left to right */
+    rotate: 360deg;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    width: 140px;
+    height: 210px;
+    border: 7px solid var(--text);
+    transition: 0.5s;
+}
+
+.card .icon::before{
+    font-family: 'cartitas';
+    content: "";
+    font-size: 7em;
+    color: var(--text);
+}
+
+.card .icon#cross::before{
+    content: "\e904";
+}
+
+.card .icon#star::before{
+    font-size: 8em;
+    content: "\e903";
+}
+
+.card .icon#wave::before{
+    content: "\e902";
+}
+
+.card .icon#square::before{
+    content: "\e901";
+}
