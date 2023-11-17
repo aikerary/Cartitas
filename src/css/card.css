@@ -8,13 +8,12 @@
     align-items: center;
     border-radius: 20px;
     transition: 0.5s;
-    margin: 50px;
+    margin: 30px;
     position: relative;
     cursor: pointer;
 }
 
 .card.rotate{
-    /* Rotate 360 degree from left to right */
     rotate: 360deg;
 }
 
