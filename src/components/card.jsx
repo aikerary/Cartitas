@@ -1,4 +1,4 @@
-import { h, Component } from "preact";
+import { h} from "preact";
 import "../css/card.css";
 
 export function Card({ id }) {

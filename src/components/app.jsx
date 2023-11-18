@@ -1,6 +1,7 @@
 // Import the Header from header.jsx
 import { Header } from './header.jsx';
 import { Hand } from './hand.jsx';
+import { Button } from './button.jsx';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <Hand />
+        <Button />
       </main>
     </div>
   );
