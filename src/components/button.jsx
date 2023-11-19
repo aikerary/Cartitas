@@ -14,12 +14,16 @@ export function Button() {
   const verifyNotRepeated=(cards, repeatedIcons)=>{
     let hasRepeated = false;
     cards.forEach((card) => {
+        card.classList.remove("shake");
         if (repeatedIcons.includes(card.querySelector(".icon").id)) {
-            card.classList.toggle("shake");
+            // Wait 0.05 seconds before adding the class shake
+            setTimeout(() => {
+                card.classList.add("shake");
+            }, 50);
             hasRepeated = true;
         }
-        return hasRepeated;
     });
+    return hasRepeated;
 }
 
   // When click if there are repeated icons
@@ -34,7 +38,9 @@ export function Button() {
     return verifyNotRepeated(cards, repeatedIcons);
   };
 
-  return <button class="btn" onClick={handleClick}><span>Guess</span></button>;
+  return <button class="btn" onClick={handleClick}>
+    <span>Guess</span>
+    </button>;
 }
 
 export default Button;
