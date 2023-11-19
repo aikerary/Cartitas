@@ -1,0 +1,50 @@
+.btn{
+    position: relative;
+    cursor: pointer;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 2em;
+    background-color: var(--medium);
+    color: var(--text);
+    border: 5px solid var(--medium);
+    outline: none;
+}
+
+.btn span{
+    transition: 0.5s;
+    font-family: 'Oleo Script';
+}
+
+/* When hover the button do an animation of filling with background color text */
+
+.btn::before{
+    color: var(--medium);
+    content: '';
+    font-family: 'Oleo Script';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 0;
+    height: 100%;
+    background-color: var(--text);
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+.btn:hover span{
+    color: var(--medium);
+}
+
+.btn:hover::before{
+    content: 'Guess';
+    width: 100%;
+}
+
+
+
+
