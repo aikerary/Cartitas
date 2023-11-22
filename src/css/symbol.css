@@ -1,0 +1,14 @@
+.symbol-container{
+    width: 120px;
+    height: 180px;
+    background-color: var(--medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 30px;
+    position: relative;
+    cursor: pointer;
+}
