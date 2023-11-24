@@ -1,7 +1,6 @@
 .symbol{
     width: 120px;
     height: 180px;
-    background-color: var(--medium);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,5 +9,33 @@
     transition: 0.5s;
     margin: 30px;
     position: relative;
-    cursor: pointer;
+}
+
+.symbol:before{
+    font-family: 'cartitas';
+    content: "";
+    font-size: 7em;
+    color: var(--light);
+}
+
+/* When the id is question change the content */
+.symbol#question:before{
+    content: "\e908";
+}
+
+.symbol#cross::before{
+    content: "\e904";
+}
+
+.symbol#star::before{
+    font-size: 8em;
+    content: "\e903";
+}
+
+.symbol#wave::before{
+    content: "\e902";
+}
+
+.symbol#square::before{
+    content: "\e901";
 }
