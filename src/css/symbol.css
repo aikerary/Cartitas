@@ -39,3 +39,17 @@
 .symbol#square::before{
     content: "\e901";
 }
+
+/* Create a fade pop up and apply when the symbol appears */
+.symbol{
+    animation: fade 0.5s;
+}
+
+@keyframes fade{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
