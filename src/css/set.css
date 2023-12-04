@@ -3,4 +3,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.set::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    left: 100%;
+}
+
+.set#hint0::after{
+    content: "Hints:0";
+}
+
+.set#hint1::after{
+    content: "Hints:1";
+}
+
+.set#hint2::after{
+    content: "Hints:2";
+}
+
+.set#hint3::after{
+    content: "Hints:3";
+}
+
+.set#hint4::after{
+    content: "Hints:4";
 }
