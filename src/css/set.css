@@ -9,9 +9,7 @@
 .set::after{
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: red;
+    color: white;
     left: 100%;
 }
 
@@ -33,4 +31,14 @@
 
 .set#hint4::after{
     content: "Hints:4";
+}
+
+.set#victory::after{
+    color: green;
+    content: "Victory!";
+}
+
+.set#defeat::after{
+    color: red;
+    content: "Defeat!";
 }
