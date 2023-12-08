@@ -1,4 +1,9 @@
 import { h } from "preact";
+import { Set } from "./set";
+// Import something for render
+import { render } from "preact";
+// Import fragment 
+import { Fragment } from "preact";
 // Import css from
 import "../css/button.css";
 
@@ -12,6 +17,23 @@ export function Button() {
     return Array.from(cards).map((card) => card.querySelector(".icon").id);
   };
 
+  // Get a function named addSet
+  // that receives a list of symbols
+  // and render a Set component with those symbols
+  // bellow the inner html of the class board
+  const addSet = (symbols) => {
+    const board = document.querySelector(".board");
+    // Get the last child of the board element
+    const lastChild = board.lastElementChild;
+    // Create a Fragment
+    const fragment = document.createDocumentFragment();
+    // Create a Set element
+    const set = <Set symbols={symbols} />;
+    // Render in the fragment the set element
+    render(set, fragment);
+    // Add the fragment to the board
+    board.appendChild(fragment);
+  };
   const verifyNotRepeated = (cards, repeatedIcons) => {
     let hasRepeated = false;
     cards.forEach((card) => {
@@ -56,6 +78,7 @@ export function Button() {
       setWarningMessage("You have repeated icons");
       return;
     }
+    addSet(icons);
   };
 
   return (
