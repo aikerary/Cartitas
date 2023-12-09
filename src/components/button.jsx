@@ -8,6 +8,7 @@ import { Fragment } from "preact";
 import "../css/button.css";
 
 export function Button() {
+  const correct=['star', 'cross', 'square', 'wave']
   // Create a function that returns all the icons from the hand element with
   // the cards and return the icons that are the id of the span into those card elements
   // into a list
@@ -17,18 +18,27 @@ export function Button() {
     return Array.from(cards).map((card) => card.querySelector(".icon").id);
   };
 
+  // Create a function that gets two lists
+  // and return the number of hits between them
+  // (In the same position)
+  const getHits = (list1, list2) => {
+    return list1.reduce((acc, item, index) => {
+      return item === list2[index] ? acc + 1 : acc;
+    }, 0);
+  };
   // Get a function named addSet
   // that receives a list of symbols
   // and render a Set component with those symbols
   // bellow the inner html of the class board
   const addSet = (symbols) => {
+    const hits= "hit"+getHits(symbols, correct);
     const board = document.querySelector(".board");
     // Get the last child of the board element
     const lastChild = board.lastElementChild;
     // Create a Fragment
     const fragment = document.createDocumentFragment();
     // Create a Set element
-    const set = <Set symbols={symbols} />;
+    const set = <Set symbols={symbols} id={hits} />;
     // Render in the fragment the set element
     render(set, fragment);
     // Add the fragment to the board
@@ -79,6 +89,7 @@ export function Button() {
       return;
     }
     addSet(icons);
+    console.log(getHits(icons, correct));
   };
 
   return (

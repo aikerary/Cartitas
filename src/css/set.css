@@ -7,30 +7,34 @@
 }
 
 .set::after{
+    font-family: 'Oleo Script';
+    font-weight: 400;
+    font-size: 2em;
     content: "";
     position: absolute;
     color: white;
     left: 100%;
+    text-transform: uppercase;
 }
 
-.set#hint0::after{
-    content: "Hints:0";
+.set#hit0::after{
+    content: "0 Hits";
 }
 
-.set#hint1::after{
-    content: "Hints:1";
+.set#hit1::after{
+    content: "1 Hit";
 }
 
-.set#hint2::after{
-    content: "Hints:2";
+.set#hit2::after{
+    content: "2 Hits";
 }
 
-.set#hint3::after{
-    content: "Hints:3";
+.set#hit3::after{
+    content: "3 Hits";
 }
 
-.set#hint4::after{
-    content: "Hints:4";
+.set#hit4::after{
+    content: "4 Hits";
 }
 
 .set#victory::after{
