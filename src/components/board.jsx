@@ -10,7 +10,7 @@ export function Board() {
   const questions = ["question", "question", "question", "question"];
   return (
     <div className="board">
-      <Set symbols={questions} />
+      <Set symbols={questions} id={"result"}/>
     </div>
   );
 }
