@@ -1,5 +1,8 @@
 import { h } from "preact";
+// Import Set
 import { Set } from "./set";
+// Import Symbol
+import Symbol from "./symbol.jsx";
 // Import something for render
 import { render } from "preact";
 // Import fragment 
@@ -8,7 +11,11 @@ import { Fragment } from "preact";
 import "../css/button.css";
 
 export function Button() {
-  const correct=['star', 'cross', 'square', 'wave']
+  // Create a function that takes a list and reorders it randomly
+  const shuffle = (list) => {
+    return list.sort(() => Math.random() - 0.5);
+  };
+  const correct= shuffle(['star', 'cross', 'square', 'wave']);
   // Create a function that returns all the icons from the hand element with
   // the cards and return the icons that are the id of the span into those card elements
   // into a list
@@ -89,7 +96,6 @@ export function Button() {
       return;
     }
     addSet(icons);
-    console.log(getHits(icons, correct));
   };
 
   return (
