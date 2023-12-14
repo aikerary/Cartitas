@@ -5,8 +5,6 @@ import { Set } from "./set";
 import Symbol from "./symbol.jsx";
 // Import something for render
 import { render } from "preact";
-// Import fragment 
-import { Fragment } from "preact";
 // Import css from
 import "../css/button.css";
 
@@ -16,6 +14,7 @@ export function Button() {
     return list.sort(() => Math.random() - 0.5);
   };
   const correct= shuffle(['star', 'cross', 'square', 'wave']);
+  let attempts= 0;
   // Create a function that returns all the icons from the hand element with
   // the cards and return the icons that are the id of the span into those card elements
   // into a list
@@ -95,7 +94,11 @@ export function Button() {
       setWarningMessage("You have repeated icons");
       return;
     }
+    if (attempts === 4) {
+      return;
+    }
     addSet(icons);
+    attempts++;
   };
 
   return (

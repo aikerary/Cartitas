@@ -7,10 +7,8 @@ import "../css/board.css";
 // Set component with a full question list
 
 export function Board() {
-  const questions = ["question", "question", "question", "question"];
   return (
     <div className="board">
-      <Set symbols={questions} id={"result"}/>
     </div>
   );
 }
