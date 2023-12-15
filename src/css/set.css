@@ -43,9 +43,17 @@
     content: "Victory!";
 }
 
+.set#victory .symbol::before{
+    color: green;
+}
+
 .set#defeat::after{
     color: red;
     content: "Defeat!";
+}
+
+.set#defeat .symbol::before{
+    color: red;
 }
 
 @keyframes pop {
