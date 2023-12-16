@@ -46,7 +46,6 @@ export function Button() {
       render(symbol, frag);
       result.appendChild(frag);
     });
-    return;
   };
 
   const verifyNotRepeated = (cards, repeatedIcons) => {
@@ -61,6 +60,11 @@ export function Button() {
       }
     });
     return hasRepeated;
+  };
+
+  const updateAttemptsLeft=()=>{
+    const attemptsLeft= document.querySelector(".attempts");
+    attemptsLeft.innerText= `Attempts left: ${4-attempts}`;
   };
 
   const setWarningMessage = (message) => {
@@ -93,6 +97,7 @@ export function Button() {
     }
     addSet(icons);
     attempts++;
+    updateAttemptsLeft();
     if (getHits(icons, correct) === 4) {
       playing=false;
       setResult("victory");

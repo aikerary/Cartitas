@@ -7,6 +7,7 @@ import {Set} from './set.jsx';
 // Import css from
 import "../css/app.css";
 import "../css/warning.css"
+import "../css/attempts.css"
 
 function App() {
   const questions = ["question", "question", "question", "question"];
@@ -14,6 +15,7 @@ function App() {
     <div>
       <Header />
       <main>
+        <h2 className="attempts">Attempts left: 4</h2>
         <Hand />
         <Button />
         <h2 className="warning"></h2>
