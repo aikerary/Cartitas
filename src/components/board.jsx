@@ -1,5 +1,4 @@
 import { h } from "preact";
-import { Set } from "./set";
 // import from css
 import "../css/board.css";
 
