@@ -1,0 +1,17 @@
+.btn.restart{
+    background-color: yellow;
+    border: 5px solid yellow;
+}
+
+.btn.restart:hover span{
+    color: yellow;
+}
+
+.btn.restart::before{
+    color: yellow;
+}
+
+.btn.restart:hover::before{
+    content: 'Restart';
+    width: 100%;
+}

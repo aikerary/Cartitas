@@ -1,6 +1,6 @@
 import { h } from "preact";
 import { Set } from "./set";
-import Symbol from "./symbol.jsx";
+import {Symbol} from "./symbol.jsx";
 import { render } from "preact";
 import "../css/button.css";
 
