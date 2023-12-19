@@ -40,3 +40,34 @@
 body{
   background-color: var(--text);
 }
+
+
+/* Create an animation of shake */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(15deg); }
+  100% { transform: rotate(-15deg); }
+}
+
+/* Create a pop up animation */
+@keyframes popUp{
+  0%{
+      transform: scale(0);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+/* Create an animation of fade in */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

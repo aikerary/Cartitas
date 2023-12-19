@@ -11,6 +11,7 @@
     margin: 30px;
     position: relative;
     cursor: pointer;
+    animation: popUp 0.5s;
 }
 
 .card.rotate{
@@ -57,15 +58,6 @@
 
 .card .icon#square::before{
     content: "\e901";
-}
-
-/* Create an animation of shake */
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(15deg); }
-    50% { transform: rotate(-15deg); }
-    75% { transform: rotate(15deg); }
-    100% { transform: rotate(-15deg); }
 }
 
 /* Apply the animation to the card */
