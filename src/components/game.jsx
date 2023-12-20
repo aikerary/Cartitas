@@ -13,7 +13,9 @@ export function Game(){
         <Fragment>
         <h2 className="attempts">Attempts left: 4</h2>
         <Hand />
+        <div className="buttonContainer">
         <Button />
+        </div>
         <h2 className="warning"></h2>
         <Set symbols={questions} id={"result"}/>
         <Board />

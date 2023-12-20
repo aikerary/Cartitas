@@ -2,6 +2,7 @@ import { h } from "preact";
 import { Set } from "./set";
 import {Symbol} from "./symbol.jsx";
 import { render } from "preact";
+import {Restart} from './restart.jsx';
 import "../css/button.css";
 
 export function Button() {
@@ -34,8 +35,6 @@ export function Button() {
     board.appendChild(fragment);
   };
 
-  // Create a function that gets 
-  // the element with the id result
   const setResult = (newId) => {
     const result= document.getElementById("result");
     result.innerHTML= "";
@@ -76,6 +75,21 @@ export function Button() {
     }, 50);
   };
 
+  // Game finished
+  const gameFinished = () => {
+    // Delete the current button
+    const button = document.querySelector(".btn");
+    button.remove();
+    // Get the buttonContainer div
+    const buttonContainer = document.querySelector(".buttonContainer");
+    // Create a fragment
+    const fragment = document.createDocumentFragment();
+    // Render the restart button
+    render(<Restart />, fragment);
+    // Append the new button to the button
+    buttonContainer.appendChild(fragment);
+  }
+
   const handleClick = () => {
     if (attempts === 4) {
       return;
@@ -100,10 +114,12 @@ export function Button() {
     updateAttemptsLeft();
     if (getHits(icons, correct) === 4) {
       playing=false;
+      gameFinished();
       setResult("victory");
     }
     if (attempts === 4 && getHits(icons, correct) !== 4) {
       playing=false;
+      gameFinished();
       setResult("defeat");
     }
   };

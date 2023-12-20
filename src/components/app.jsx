@@ -6,13 +6,11 @@ import {Restart} from './restart.jsx';
 import "../css/app.css";
 
 function App() {
-  const questions = ["question", "question", "question", "question"];
   return (
     <div>
       <Header />
       <main>
         <Game></Game>
-        <Restart></Restart>
       </main>
     </div>
   );

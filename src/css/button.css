@@ -50,6 +50,13 @@
     animation: popUp 0.8s;
 }
 
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
