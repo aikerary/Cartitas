@@ -1,18 +1,20 @@
 // Import the Header from header.jsx
 import { Header } from './header.jsx';
 import { Game } from './game.jsx';
-import {Restart} from './restart.jsx';
+import {Footer} from './footer.jsx';
+import { Fragment } from 'preact';
 // Import css from
 import "../css/app.css";
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Header />
       <main>
         <Game></Game>
       </main>
-    </div>
+      <Footer />
+    </Fragment>
   );
 }
 
