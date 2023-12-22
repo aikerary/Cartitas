@@ -5,9 +5,9 @@
     border: none;
     border-radius: 40px;
     font-size: 2.5em;
-    background-color: var(--medium);
+    background-color: greenyellow;
     color: var(--text);
-    border: 5px solid var(--medium);
+    border: 5px solid greenyellow;
     outline: none;
 }
 
@@ -19,7 +19,7 @@
 /* When hover the button do an animation of filling with background color text */
 
 .btn::before{
-    color: var(--medium);
+    color: greenyellow;
     content: '';
     font-family: 'Oleo Script';
     display: flex;
