@@ -3,6 +3,7 @@
     height: 20vh;
     background-color: var(--light);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
