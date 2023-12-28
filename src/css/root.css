@@ -5,11 +5,11 @@
 /* Font face for cartitas */
 @font-face{
   font-family: 'cartitas';
-  src:  url('fonts/cartitas.eot?jjjdj7');
-  src:  url('fonts/cartitas.eot?jjjdj7#iefix') format('embedded-opentype'),
-    url('fonts/cartitas.ttf?jjjdj7') format('truetype'),
-    url('fonts/cartitas.woff?jjjdj7') format('woff'),
-    url('fonts/cartitas.svg?jjjdj7#cartitas') format('svg');
+  src:  url('../fonts/cartitas.eot?jjjdj7');
+  src:  url('../fonts/cartitas.eot?jjjdj7#iefix') format('embedded-opentype'),
+    url('../fonts/cartitas.ttf?jjjdj7') format('truetype'),
+    url('../fonts/cartitas.woff?jjjdj7') format('woff'),
+    url('../fonts/cartitas.svg?jjjdj7#cartitas') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
