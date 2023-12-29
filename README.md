@@ -58,4 +58,4 @@ Contributions are welcome! If you would like to contribute to Cartitas, please f
 
 ## License
 
-Cartitas is licensed under the GNU General Public License v3.0. See [LICENSE](./LICENSE) for more information.
+Cartitas is licensed under the MIT License. See [LICENSE](./LICENSE) for more information.
