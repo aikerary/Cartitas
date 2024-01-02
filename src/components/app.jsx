@@ -5,6 +5,7 @@ import {Footer} from './footer.jsx';
 import { Fragment } from 'preact';
 // Import css from
 import "../css/app.css";
+import "../css/responsive.css"
 
 function App() {
   return (

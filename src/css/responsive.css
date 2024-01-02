@@ -1,0 +1,58 @@
+/* When the screen round the 400 width create a media query for screen and that size */
+
+@media screen and (max-width: 430px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    main{
+        width: 100vw;
+    }
+
+    .hand{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 100px;
+        height: 150px;
+        margin: 20px;
+    }
+
+    .board{
+        width: 100%;
+    }
+
+    .card .icon::before{
+        font-size: 3.5em;
+    }
+
+    .card .icon#star::before{
+        font-size: 4.3em;
+    }
+
+    .card::after{
+        width: 80px;
+        height: 120px;
+        border-width: 5px;
+    }
+
+    .set{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .set::after{
+        left: 40%;
+        bottom: -10%;
+    }
+
+
+    .symbol{
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        font-size: 1em;
+    }
+}
