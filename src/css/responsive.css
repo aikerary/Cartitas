@@ -41,11 +41,13 @@
     .set{
         width: 100%;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 
     .set::after{
-        left: 40%;
-        bottom: -10%;
+        left: 45%;
+        top: -5%;
+        font-size: 1.5em;
     }
 
 
