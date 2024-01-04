@@ -7,5 +7,52 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+}
+
+.footer .advice{
+    font-size: 2em;
     color: var(--text);
+}
+
+.footer .social{
+    color: var(--text);
+}
+
+.footer .social .social-icon{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 2em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .social .social-icon span{
+    position: relative;
+}
+
+.footer .social .social-icon span::before{
+    content: "";
+    position: absolute;
+    font-family: 'cartitas';
+    font-size: 2em;
+    top: -30px;
+    left: 0;
+}
+
+.footer .social .social-icon .github::before{
+    content: "\e906";
+    left: 110px;
+}
+
+.footer .social .social-icon .linkedin::before{
+    content: "\e905";
+}
+
+.footer .social .social-icon .personal::before{
+    content: "\e907";
+    left: 200px;
+    top: -50px;
+    font-size: 3em;
 }
