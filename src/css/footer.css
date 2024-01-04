@@ -16,6 +16,7 @@
 
 .footer .social{
     color: var(--text);
+    padding-right: 200px;
 }
 
 .footer .social .social-icon{
