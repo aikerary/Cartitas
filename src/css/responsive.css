@@ -3,6 +3,25 @@
 @media screen and (max-width: 430px) {
     .footer {
         flex-direction: column;
+        height: 20vh;
+    }
+
+    .footer .advice{
+        font-size: 1.5em;
+    }
+
+    .footer .social{
+        padding-right: 250px;
+    }
+
+    .footer .social .social-icon span::before{
+        top: -40px;
+        font-size: 1.5em;
+    }
+
+    .footer .social .social-icon .personal::before{
+        top:-60px;
+        font-size: 2.5em;
     }
 
     main{

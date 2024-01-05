@@ -16,7 +16,7 @@
 
 .footer .social{
     color: var(--text);
-    padding-right: 200px;
+    padding-right: 260px;
 }
 
 .footer .social .social-icon{
@@ -44,11 +44,11 @@
 
 .footer .social .social-icon .github::before{
     content: "\e906";
-    left: 110px;
 }
 
 .footer .social .social-icon .linkedin::before{
     content: "\e905";
+    left: 105px;
 }
 
 .footer .social .social-icon .personal::before{
